@@ -1,0 +1,8 @@
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\bin\Debug\netstandard2.0\Presentation.deps.json
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\bin\Debug\netstandard2.0\Presentation.dll
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\bin\Debug\netstandard2.0\Presentation.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\obj\Debug\netstandard2.0\Presentation.csproj.CoreCompileInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\obj\Debug\netstandard2.0\Presentation.AssemblyInfoInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\obj\Debug\netstandard2.0\Presentation.AssemblyInfo.cs
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\obj\Debug\netstandard2.0\Presentation.dll
+D:\Hamid website\AraPolymerSemnanSLN\Presentation\obj\Debug\netstandard2.0\Presentation.pdb

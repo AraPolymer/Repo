@@ -1,0 +1,12 @@
+D:\Hamid website\AraPolymerSemnanSLN\Repository\bin\Debug\netstandard2.0\Repository.deps.json
+D:\Hamid website\AraPolymerSemnanSLN\Repository\bin\Debug\netstandard2.0\Repository.dll
+D:\Hamid website\AraPolymerSemnanSLN\Repository\bin\Debug\netstandard2.0\Repository.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Repository\bin\Debug\netstandard2.0\Model.dll
+D:\Hamid website\AraPolymerSemnanSLN\Repository\bin\Debug\netstandard2.0\Model.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.csprojAssemblyReference.cache
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.csproj.CoreCompileInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfoInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfo.cs
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.csproj.CopyComplete
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.dll
+D:\Hamid website\AraPolymerSemnanSLN\Repository\obj\Debug\netstandard2.0\Repository.pdb

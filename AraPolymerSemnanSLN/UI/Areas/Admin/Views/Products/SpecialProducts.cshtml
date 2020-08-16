@@ -1,0 +1,133 @@
+﻿@model List<Service.ViewModels.VMSpecialProducts>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | DataTables</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @section Styles {
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    }
+</head>
+<body class="hold-transition sidebar-mini">
+
+
+    <div class="card-header text-right">
+        <div style="width:200px"><a class="btn btn-primary nav-link" asp-area="Admin" asp-controller="Products" asp-action="Products" asp-route-SelectedProductType="@ViewBag.ProductType">بازگشت به صفحه قبل</a> </div>
+
+        <p dir="rtl">محصولات زیر در صفحه اول نمایش داده میشود.</p>
+    </div>
+
+    <div class="content">
+        <div class="card-body">
+            <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>کد</th>
+                                    <th>نام</th>
+                                    <th>طول</th>
+                                    <th>اندازه</th>
+                                    <th>ضخامت</th>
+                                    <th>وزن</th>
+                                    <th>بعد</th>
+                                    <th>محصول ویژه</th>
+                                    <th>کد استاندارد</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelitem => @item.Code)</td>
+                                        <td>@Html.DisplayFor(modelitem => @item.Name)</td>
+                                        <td>@Html.DisplayFor(modelitem => @item.Length)</td>
+                                        <td>@Html.DisplayFor(modelitem => @item.Size)</td>
+                                        <td>@Html.DisplayFor(modelitem => @item.Thickness)</td>
+                                        <td>@Html.DisplayFor(modelitem => @item.weight)</td>
+                                        <td>@Html.DisplayFor(modelitem => @item.Diameter)</td>
+                                        @if (@item.hotproduct == true)
+                                        {
+                                            <td>بلی</td>
+                                        }
+                                        else
+                                        {
+                                            <td>خیر</td>
+                                        }
+                                        <td>@Html.DisplayFor(modelitem => @item.StandardCode)</td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>کد</th>
+                                    <th>نام</th>
+                                    <th>طول</th>
+                                    <th>اندازه</th>
+                                    <th>ضخامت</th>
+                                    <th>وزن</th>
+                                    <th>بعد</th>
+                                    <th>محصول ویژه</th>
+                                    <th>کد استاندارد</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery -->
+    @section Scripts {
+        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- DataTables -->
+        <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../../dist/js/demo.js"></script>
+        <!-- page script -->
+        <script>
+            $(function () {
+                $("#example1").DataTable({
+                    "responsive": true,
+                    "autoWidth": false,
+                });
+
+            });
+        </script>
+    }
+</body>
+</html>

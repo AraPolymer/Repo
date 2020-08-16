@@ -1,0 +1,14 @@
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.csprojAssemblyReference.cache
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.csproj.CoreCompileInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\Service.deps.json
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\Service.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\Service.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\DataLayer.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\Model.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\DataLayer.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netstandard2.0\Model.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netstandard2.0\Service.pdb

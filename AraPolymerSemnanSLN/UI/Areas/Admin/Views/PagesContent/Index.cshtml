@@ -1,0 +1,36 @@
+﻿@model Service.ViewModels.VMPagesContent
+@{
+    ViewData["Title"] = "PagesContent";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+}
+<div dir="rtl" style="text-align: right;">
+    <p dir="rtl" style="text-align: right;">
+        <br />
+        .لطفا محتوای صفحه خود را وارد کرده و در انتها دکمه ذخیره را وارد کنید
+
+    </p>
+    <p>
+        <br />
+        نام صفحه:@Model.PagesContentvm.PageCaption
+    </p>
+</div>
+
+<div style="text-align: right; width:630px">
+    <form asp-controller="PagesContent" asp-action="Edit" methodedit="post">
+        <input type="hidden" asp-for=" @Model.PagesContentvm.PageCaption" />
+        <input type="hidden" asp-for=" @Model.PagesContentvm.PageName" />
+        <input type="hidden" asp-for=" @Model.PagesContentvm.Serial" />
+        <div class="card-body pad">
+            <div class="mb-3">
+                <textarea dir="rtl" class="textarea" asp-for="@Model.PagesContentvm.Contents" style="text-align: right; width: 630px; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid rgb(221, 221, 221); padding: 10px; display: none;"></textarea>
+            </div>
+            <p class="text-sm mb-0">
+                <button type="submit" class="btn btn-block btn-primary" name="submitButton" value="Edit">ذخیره</button>
+                <button type="submit" class="btn btn-block btn-primary" name="submitButton" value="Cancel">انصراف</button>
+
+            </p>
+        </div>
+    </form>
+</div>
+

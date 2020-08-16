@@ -1,0 +1,87 @@
+﻿@model Model.Entities.Product
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateProducts</title>
+</head>
+<body>
+
+    <div class="content text-right" dir="rtl">
+        <div class="row">
+            <div class="col-md-4">
+                <br />
+
+                <div dir="rtl" class="text-right">
+                    <p dir="rtl" class="text-right"> لطفا اطلاعات محصول جدید را وارد نمایید.</p>
+                    <form asp-action="CreateProducts" method="post">
+                        <input asp-for="Serial" class="form-control" type="hidden" />
+                        <input asp-for="ProductTypeID" value="@TempData["ProductType"]" type="hidden" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label class="control-label">کد </label>
+                            <input asp-for="Code" class="form-control" />
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">نام</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">طول</label>
+                            <input asp-for="Length" class="form-control" />
+                            <span asp-validation-for="Length" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">اندازه</label>
+                            <input asp-for="Size" class="form-control" />
+                            <span asp-validation-for="Size" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">ضخامت</label>
+                            <input asp-for="Thickness" class="form-control" />
+                            <span asp-validation-for="Thickness" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">وزن</label>
+                            <input asp-for="weight" class="form-control" />
+                            <span asp-validation-for="weight" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">بعد</label>
+                            <input asp-for="Diameter" class="form-control" />
+                            <span asp-validation-for="Diameter" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">کد استاندارد</label>
+                            <input asp-for="StandardCode" class="form-control" />
+                            <span asp-validation-for="StandardCode" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">محصول ویژه</label>
+                            <select asp-for="hotproduct" id="hotproduct" name="hotproduct">
+                                <option value="True">بلی</option>
+                                <option value="False">خیر</option>
+                            </select>
+                            <span asp-validation-for="hotproduct" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" value="Create" asp-area="Admin" asp-action="CreateProducts" asp-controller="Products" class="btn btn-primary">ذخیره</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a asp-area="Admin" asp-controller="Products" asp-action="Products" asp-route-SelectedProductType="@TempData["ProductType"]">انصراف و بازگشت به لیست</a>
+        </div>
+    </div>
+</body>
+</html>

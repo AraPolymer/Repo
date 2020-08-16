@@ -1,0 +1,126 @@
+﻿@model Service.ViewModels.ProducttypesViewModel
+@{ 
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | DataTables</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @section Styles {
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    }
+    </head>
+<body class="hold-transition sidebar-mini">
+
+
+    <div class="card-header text-right">
+        <p dir="rtl">انواع محصولات در منوی محصولات سایت نمایش داده میشود.</p>
+        <div style="width:200px"><a class="btn btn-primary nav-link" asp-area="Admin" asp-controller="ProductsSettings" asp-action="CreateProductsType">افزودن نوع محصول</a> </div>
+        <h3 dir="rtl" class="text-right" style="font-size:small">لیست انواع محصولات</h3>
+    </div>
+
+    <div class="content">
+    <div class="card-body">
+        <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>کد</th>
+                                <th>نام</th>
+                                <th>ویرایش</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.producttypeList)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelitem => @item.Code)</td>
+                                    <td>
+                                        @Html.DisplayFor(modelitem => @item.Name)
+                                    </td>
+                                    <td>
+                                        <!--
+                                        <div style="width:100px"><button type="button" name="DeleteButton" class="btn btn-primary" data-toggle="modal" data-target="#modal-Delete" data-id="@item.Serial">حذف</button> </div>
+                                        -->
+                                        <div style="width:100px">
+                                            <form asp-controller="ProductsSettings" asp-action="DeleteProductsType" asp-route-id="@item.Serial" method="post">
+                                                <button type="submit" class="btn btn-block btn-primary" onclick="return confirm('ایا مطمئن هستید که میخواهید این محصول را حذف کنید؟')" >حذف</button>
+                                            </form>
+                                            <div style="width:100px">
+                                                <a type="button" class="btn btn-block btn-primary" asp-controller="ProductsSettings" asp-action="EditProductsType" asp-route-id="@item.Serial">ویرایش</a>
+                                            </div>
+
+                                        </div>
+
+
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>کد</th>
+                                <th>نام</th>
+                                <th>ویرایش</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- jQuery -->
+    @section Scripts {
+        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- DataTables -->
+        <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../../dist/js/demo.js"></script>
+        <!-- page script -->
+        <script>
+            $(function () {
+                $("#example1").DataTable({
+                    "responsive": true,
+                    "autoWidth": false,
+                });
+
+            });
+        </script>
+    }
+</body>
+</html>

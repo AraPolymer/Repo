@@ -1,0 +1,58 @@
+﻿@model Service.ViewModels.VMMainLayoutModel
+
+<div id="logomenu">
+
+    <div id="logo">
+        <img src="/images/logo.png" width="208" height="59" alt="IGreen" />
+    </div>
+
+
+    <!-- Beginning of compulsory code below -->
+
+    <div class="horizontal-centering">
+        <div>
+            <div>
+
+                <ul id="nav" class="dropdown dropdown-horizontal">
+                    <li id="n-shows">
+                        <a href="./" class="dir">محصولات</a>
+                        <ul>
+                            @foreach (var item in Model.producttype)
+                            {
+                                <li><a asp-controller="Home" asp-action="ProductsListByType" asp-route-ProductType=@item.Serial>@item.Name</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li id="n-shows">
+                        <a href="./" class="dir">News & Media</a>
+                        <ul>
+                            <li class="first"><a href="./">TV Schedule</a></li>
+                            <li><a href="./">MTV Shows Gossip</a></li>
+                            <li><a href="./">Show Photos</a></li>
+                            <li><a href="./">Be on MTV</a></li>
+                            <li><a href="./">Shop MTV Shows</a></li>
+                        </ul>
+                    </li>
+                    <ul>
+                        <li class="first"><a href="./">TV Schedule</a></li>
+                        <li><a href="./">MTV Shows Gossip</a></li>
+                        <li><a href="./">Show Photos</a></li>
+                        <li><a href="./">Be on MTV</a></li>
+                        <li><a href="./">Shop MTV Shows</a></li>
+                    </ul>
+                    <li id="n-news"><a href="./" class="dir">Service & Support</a>
+                    <li id="n-news"><a href="./" class="dir">ABOUT IGREEN</a>
+
+
+                    <li class="last">
+                        <a asp-controller="Home" asp-action="PagesDetails" asp-route-PageName="ContactUs" class="dir">تماس با ما</a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>

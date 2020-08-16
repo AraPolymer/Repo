@@ -1,0 +1,87 @@
+.banner-main{
+	display:block;
+	overflow:hidden;
+}
+.banner-mask-top{
+	display:block;
+	width:960px;
+	height:10px;
+	position:absolute;
+	z-index:150;
+	left:0px;
+	top:0px;
+}
+.index-mask-top{background:url('banner_mask_top_bg.png') no-repeat 0 0;}
+.product-mask-top{background:url('product_mask_top.png') no-repeat 0 0;}
+
+.banner-mask-bottom{
+	display:block;
+	width:960px;
+	height:10px;
+	position:absolute;
+	z-index:150;
+	left:0px;
+	top:340px;
+}
+.index-mask-bottom{background:url('banner_mask_bottom_bg.png') no-repeat 0 0;}
+.product-mask-bottom{background:url('product_mask_bottom.png') no-repeat 0 0;}
+
+.banner-control{
+	display:block;
+	position:absolute;
+	z-index:100;
+	left:0px;
+	top:289px;
+	width:960px;
+	height:60px;
+	border-top:1px solid #111;
+	background:url('banner_control_bg_2.png') repeat 0 0;
+	text-align:center;
+}
+.banner-control-bar{
+	margin: auto;
+	padding: 2px 3px;
+	margin-top:5px;
+}
+
+.banner-tip{
+	display:block;
+	width:38px;
+	height:38px;
+	overflow:hidden;
+}
+.banner-tip img{width:40px;	}
+.banner-tip-off{
+	border: 1px solid #000;
+}
+.banner-tip-on{
+	border: 1px solid #666;
+}
+
+.banner-content{
+	color: #FFF;
+	bottom: 100px;
+	width:455px;
+	top:217px;
+	left:20px;
+}
+.banner-content h3{
+	color:#FFF;
+}
+.banner-content-body{
+	padding: 8px; 
+	left:0;
+	top:0;
+}
+.banner-content-bg{ 
+	top:0;
+	left:0;
+	padding: 8px; 
+	background: #000 url('banner_content_bg.png') 50% 50% repeat-x; 
+	opacity: .70; 
+	filter: Alpha(Opacity=70);
+}
+#MSI-Banner{
+	background:#000;
+}
+

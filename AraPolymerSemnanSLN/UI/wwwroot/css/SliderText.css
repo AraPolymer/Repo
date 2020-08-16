@@ -1,0 +1,78 @@
+.st-main{
+	display:block;
+	overflow:hidden;
+	margin: 35px 13px 1px;
+}
+	.st-body{
+		display:block;
+	}
+		.st-item{
+
+		}
+
+			.st-thumb{
+				border: 1px solid #727272;
+				display: block;
+				float: left;
+				height: 41px;
+				overflow: hidden;
+				width: 42px;
+				margin-right:5px;
+				
+			}
+
+			.st-date{
+				color: #D3D3D3;
+				display: block;
+				font-size:10px;
+				line-height:15px;
+			}
+			
+			.st-title{
+				display:block;
+				height:40px;
+				overflow:hidden;
+			}
+				.st-title a{
+					color: #FFF;
+					text-decoration:none;
+					font-size:11px;
+					font-weight: bold;
+					line-height:14px;
+				}
+			
+			.st-content,.sp-content {
+				display:block;
+				height:82px;
+				overflow:hidden;
+				margin-top:10px;
+				font-size:11px;
+				color:#FFF;
+				line-height: 17px;
+				padding: 0 6px;
+			}
+			.sp-content{
+			margin-top:0px}
+			.st-control{
+				display:block;
+				text-align:center;
+			}
+				.st-control-bar{
+					margin: auto;
+					padding: 2px 3px;
+					margin-top:5px;
+					overflow:hidden;
+				}
+
+				.st-tip{
+					display:block;
+					width:11px;
+					height:11px;
+					overflow:hidden;
+				}
+					.st-tip-off{
+						background:url('banner_tip.png') repeat-x 0 0;
+					}
+					.st-tip-on{
+						background:url('banner_tip.png') repeat-x -11px 0;
+					}

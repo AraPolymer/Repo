@@ -1,0 +1,12 @@
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.deps.json
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.dll
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.pdb
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\bin\Debug\netcoreapp3.1\Model.dll
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\bin\Debug\netcoreapp3.1\Model.pdb
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csprojAssemblyReference.cache
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfoInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfo.cs
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CopyComplete
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.dll
+D:\Hamid website\AraPolymerSemnanSLN\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.pdb

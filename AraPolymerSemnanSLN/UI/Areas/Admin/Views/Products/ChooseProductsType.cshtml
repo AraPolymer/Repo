@@ -1,0 +1,46 @@
+﻿@model Service.ViewModels.ProducttypesViewModel
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width" />
+   <title>ChooseProductsType</title>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="content">
+        <br />
+        
+        <div dir="rtl" class="text-right">
+            <form method="get"  asp-controller="Products" asp-action="Products" >
+                <p>لطفا نوع محصول را انتخاب کنید و سپس دکمه ورود رابزنید. </p>
+                @Html.DropDownList("SelectedProductType", new SelectList(Model.producttypeList, "Serial", "Name", Model.ProductTypeDropdownSelected), "لطفاً یک نوع محصول را انتخاب نمایید.", new { @id = "SelectedProductType", @class = "btn btn-default dropdown-toggle", @Name= "SelectedProductType" })
+                <br />
+                <br /><br />
+                <button style="width:100px" id="EnterButton" type="submit" class="btn btn-block btn-primary" value="SelectedProductType" >ورود</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+        window.onload = function () {
+            document.getElementById("EnterButton").disabled = true;
+
+            document.getElementById("SelectedProductType").onchange = function () {
+                if (this.options[this.selectedIndex].value == 0) {
+
+                    document.getElementById("EnterButton").disabled = true;
+                }
+                else {
+
+                    document.getElementById("EnterButton").disabled = false;                   
+                }
+            }
+        }
+    </script>
+</body>
+</html>

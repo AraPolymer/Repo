@@ -1,0 +1,87 @@
+﻿@model Model.Entities.Product
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditProducts</title>
+</head>
+<body>
+
+    <div class="content text-right" dir="rtl">
+        <div class="row">
+            <div class="col-md-4">
+                <br />
+                <div dir="rtl" class="text-right">
+                    <br />
+                    <form asp-action="EditProducts">
+                        <input asp-for="@Model.Serial" class="form-control" type="hidden" />
+                        <input asp-for="@Model.ProductTypeID" type="hidden" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label class="control-label">کد </label>
+                            <input asp-for="@Model.Code" class="form-control" />
+                            <span asp-validation-for="@Model.Code" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">نام</label>
+                            <input asp-for="@Model.Name" class="form-control" />
+                            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">طول</label>
+                            <input asp-for="@Model.Length" class="form-control" />
+                            <span asp-validation-for="@Model.Length" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">اندازه</label>
+                            <input asp-for="@Model.Size" class="form-control" />
+                            <span asp-validation-for="@Model.Size" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">ضخامت</label>
+                            <input asp-for="@Model.Thickness" class="form-control" />
+                            <span asp-validation-for="@Model.Thickness" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">وزن</label>
+                            <input asp-for="@Model.weight" class="form-control" />
+                            <span asp-validation-for="@Model.weight" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">بعد</label>
+                            <input asp-for="@Model.Diameter" class="form-control" />
+                            <span asp-validation-for="@Model.Diameter" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">کد استاندارد</label>
+                            <input asp-for="@Model.StandardCode" class="form-control" />
+                            <span asp-validation-for="@Model.StandardCode" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">محصول ویژه</label>
+                            <select asp-for="@Model.hotproduct" id="hotproduct" name="hotproduct" class="form-control">
+                                <option value=False>خیر</option>
+                                <option value=True>بلی</option>
+                            </select>
+                            <span asp-validation-for="@Model.hotproduct" class="text-danger"></span>
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" asp-area="Admin" asp-action="EditProducts" asp-controller="Products" class="btn btn-primary">ذخیره</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a asp-area="Admin" asp-controller="Products" asp-action="Products" asp-route-SelectedProductType="@Model.ProductTypeID">انصراف و بازگشت به لیست</a>
+        </div>
+    </div>
+</body>
+</html>

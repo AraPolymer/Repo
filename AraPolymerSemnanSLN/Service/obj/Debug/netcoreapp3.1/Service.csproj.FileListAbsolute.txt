@@ -1,0 +1,17 @@
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Service.runtimeconfig.json
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Service.runtimeconfig.dev.json
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Service.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Service.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\DataLayer.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Model.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\DataLayer.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\bin\Debug\netcoreapp3.1\Model.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.dll
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.pdb
+D:\Hamid website\AraPolymerSemnanSLN\Service\obj\Debug\netcoreapp3.1\Service.genruntimeconfig.cache
